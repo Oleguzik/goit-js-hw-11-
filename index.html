@@ -2,26 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11-/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>HomeWork 11</title>
+    
+    <script type="module" crossorigin src="/goit-js-hw-11-/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11-/assets/vendor-46aac873.js">
+    <link rel="stylesheet" href="/goit-js-hw-11-/assets/vendor-eb6030bc.css">
+    <link rel="stylesheet" href="/goit-js-hw-11-/assets/index-2d20abb8.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./01-gallary.html" class="nav-link">Gallary</a>
-      </li>
+    <form class="search">
+      <input
+        type="text"
+        name="search"
+        placeholder="Search images..."
+        class="textInput"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
 
-      <li class="nav-item">
-        <a href="./02-form.html" class="nav-link">Form</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-
+    <ul class="gallery"></ul>
+    <span class="loader"></span>
+    
   </body>
 </html>
