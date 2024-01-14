@@ -13,7 +13,6 @@ const modal = new SimpleLightbox('.gallery a', {
 });
 
 const loader = document.querySelector('.loader');
-// loader.style.display = 'none';
 
 searchForm.addEventListener('submit', onSearchSubmit);
 
